@@ -1,0 +1,70 @@
+<div class="container">
+  <div class="dashboard-header">
+    <h1>Tableau de bord</h1>
+    <p>Bienvenue sur votre espace de gestion d'événements</p>
+  </div>
+
+  <div class="dashboard-stats">
+    <div class="stat-card">
+      <h3>{{ totalEvents }}</h3>
+      <p>Événements totaux</p>
+    </div>
+    <div class="stat-card">
+      <h3>{{ upcomingEvents }}</h3>
+      <p>Événements à venir</p>
+    </div>
+    <div class="stat-card">
+      <h3>{{ myRegistrations }}</h3>
+      <p>Mes inscriptions</p>
+    </div>
+    <div class="stat-card">
+      <h3>{{ totalParticipants }}</h3>
+      <p>Participants totaux</p>
+    </div>
+  </div>
+
+  <div class="dashboard-content">
+    <div class="dashboard-section">
+      <h2>Événements récents</h2>
+      <div class="events-list">
+        <div class="event-item" *ngFor="let event of recentEvents">
+          <div class="event-info">
+            <h4>{{ event.title }}</h4>
+            <p>{{ event.description }}</p>
+            <div class="event-meta">
+              <span class="event-date">{{ event.date | date:'dd/MM/yyyy' }}</span>
+              <span class="event-location">{{ event.location }}</span>
+              <span class="event-status" [class]="'status-' + event.status">{{ event.status }}</span>
+            </div>
+          </div>
+          <div class="event-actions">
+            <button class="btn btn-sm btn-primary">Voir détails</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dashboard-section">
+      <h2>Actions rapides</h2>
+      <div class="quick-actions">
+        <button class="action-btn">
+          <span class="action-icon">📅</span>
+          <span>Créer un événement</span>
+        </button>
+        <button class="action-btn">
+          <span class="action-icon">👥</span>
+          <span>Gérer les participants</span>
+        </button>
+        <button class="action-btn">
+          <span class="action-icon">📊</span>
+          <span>Voir les statistiques</span>
+        </button>
+        <button class="action-btn">
+          <span class="action-icon">⚙️</span>
+          <span>Paramètres</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
