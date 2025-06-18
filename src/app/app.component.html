@@ -1,0 +1,26 @@
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <a routerLink="/">Bank Al-Maghrib Events</a>
+    </div>
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <a routerLink="/home" class="nav-link" routerLinkActive="active">Accueil</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/login" class="nav-link" routerLinkActive="active">Connexion</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/register" class="nav-link" routerLinkActive="active">Inscription</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/dashboard" class="nav-link" routerLinkActive="active">Tableau de bord</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main class="main-content">
+  <router-outlet></router-outlet>
+</main>
+
