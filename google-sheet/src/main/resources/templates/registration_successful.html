@@ -1,0 +1,106 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <title>Notification Email</title>
+    <!--[if !mso]><! -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        /* General Reset */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        table,
+        td {
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* Main styles */
+
+
+        .content-section {
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            margin: 0 auto;
+            max-width: 600px;
+            padding: 30px 20px;
+            border: 1px solid #ddd;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #4a90e2;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px 25px;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(74, 144, 226, 0.4);
+        }
+
+        .footer-section {
+            padding: 10px 25px;
+            color: #555555;
+            font-size: 14px;
+            text-align: left;
+            line-height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Main Content Section -->
+<div class="content-section">
+    <!-- Title Section -->
+    <img src="https://www.wallix.com/wp-content/uploads/2021/07/Munisys_Logo.png" alt="Logo" style="max-width: 150px;">
+    <h1 style="color: #333; font-size: 22px; text-align: center; margin-bottom: 20px;">Votre compte a été créé avec succès !</h1>
+
+    <!-- Greeting Section -->
+    <p style="font-size: 16px; color: #555; line-height: 24px;">
+        Bonjour [[${name}]],<br><br>
+        Nous sommes ravis de vous accueillir sur notre plateforme. Votre compte a été créé avec succès ! Vous pouvez dès à présent vous connecter en utilisant les informations ci-dessous :
+    </p>
+
+    <!-- Account Information Section -->
+    <p style="font-size: 16px; color: #333; font-weight: bold; line-height: 24px;">
+        Votre Email : [[${email}]]<br>
+        Votre Mot de passe : [[${password}]]
+    </p>
+
+    <!-- Call to Action Button -->
+    <p style="text-align: center; margin: 30px 0;">
+        <a href="#" class="cta-button">Cliquez ici pour vous connecter</a>
+    </p>
+
+    <!-- Footer Section -->
+    <div class="footer-section">
+        Cordialement,<br>
+        L'équipe de Munisys<br>
+        10000، 21 Av. Tadla, Rabat 10000<br>
+        <a href="https://munisys.com/" style="color: #4a90e2;">https://munisys.com/</a>
+    </div>
+</div>
+
+</body>
+
+</html>
